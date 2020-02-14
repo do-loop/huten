@@ -60,7 +60,7 @@ public sealed class Request
     public string Name { get; set; } = "Victor";
 }
 
-// "?True=1&False=False
+// "?True=1&False=False"
 public sealed class Request
 {
     [QueryStringParameterFormat(typeof(IntegerBooleanParameterFormatter))]
@@ -69,7 +69,7 @@ public sealed class Request
     public bool False { get; set; } = false;
 }
 
-// "?True=1&F=False&A=10&B=B
+// "?True=1&F=False&A=10&B=B"
 public sealed class Request
 {
     [QueryStringParameterFormat(typeof(IntegerBooleanParameterFormatter))]
@@ -84,7 +84,7 @@ public sealed class Request
     public MyEnum B { get; set; } = MyEnum.B;
 }
 
-// "?A=10,20&B=A,B
+// "?A=10,20&B=A,B"
 public sealed class Request
 {
     public MyEnum[] A { get; set; } = { MyEnum.A, MyEnum.B };
