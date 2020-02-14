@@ -84,7 +84,7 @@ public sealed class Request
     public MyEnum B { get; set; } = MyEnum.B;
 }
 
-// "?A=10,20&B=A,B"
+// "?A=10,20&B=B,A"
 public sealed class Request
 {
     public MyEnum[] A { get; set; } = { MyEnum.A, MyEnum.B };
