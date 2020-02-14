@@ -57,21 +57,21 @@
                 .ExtractParameters(new Request_2())
                 .Build();
 
-            // "?True=1&False=False
+            // "?True=1&False=False"
             Console.WriteLine(b);
 
             var c = QueryStringBuilder.Create()
                 .ExtractParameters(new Request_3())
                 .Build();
 
-            // "?True=1&F=False&A=10&B=B
+            // "?True=1&F=False&A=10&B=B"
             Console.WriteLine(c);
 
             var d = QueryStringBuilder.Create()
                 .ExtractParameters(new Request_4())
                 .Build();
 
-            // "?A=10,20&B=B,A
+            // "?A=10,20&B=B,A"
             Console.WriteLine(d);
         }
     }
